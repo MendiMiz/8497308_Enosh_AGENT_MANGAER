@@ -1,9 +1,9 @@
 ﻿namespace AgentsRest.Dto
 {
-    public class TargetDSto
+    public class TargetDto
     {
         public string Name { get; set; }
         public string Position { get; set; }
-        public string Photo_Url { get; set; }
+        public string PhotoUrl { get; set; }
     }
 }

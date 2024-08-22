@@ -9,6 +9,7 @@ namespace AgentsRest.Service
         Task<List<AgentModel>> GetAgentsAsync();
         Task<int> CreateAgentReturnIdAsync(AgentDto agentDto);
         Task AgentFirstLocation(LocationDto locationDto, int id);
+        Task MoveAgentById(int agentId, DirectionDto direction);
 
     }
 }

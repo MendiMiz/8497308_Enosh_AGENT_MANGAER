@@ -13,6 +13,6 @@
         public int X { get; set; }
         public int Y { get; set; }
         public StatusAgent Status { get; set; }
-
+        public List<MissionModel> Missions { get; set; }
     }
 }

@@ -19,6 +19,8 @@ namespace AgentsRest
             builder.Services.AddSwaggerGen();
             
             builder.Services.AddScoped<IAgentService, AgentService>();
+            builder.Services.AddScoped<ITargetService, TargetService>();
+            builder.Services.AddScoped<IMissionService, MissionService>();
             builder.Services.AddDbContext<ApplicationDbContext>(
               options => options.UseSqlServer(
                   builder.Configuration.GetConnectionString(

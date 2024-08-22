@@ -13,8 +13,8 @@
         public AgentModel Agent { get; set; }
         public int TargetId { get; set; }
         public TargetModel Target { get; set; }
-        public DateTime TimeLeft { get; set; }
-        public DateTime TimeToDo { get; set; }
-        public MissionStatus MissionStatus { get; set; }
+        public int TimeLeft { get; set; }
+        public DateTime TimeOfKill { get; set; }
+        public MissionStatus Status { get; set; }
     }
 }

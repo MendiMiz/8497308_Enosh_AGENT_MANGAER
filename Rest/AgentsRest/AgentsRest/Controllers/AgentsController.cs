@@ -8,16 +8,18 @@ using System.Text.Json;
 
 namespace AgentsRest.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class AgentsController(IAgentService agentService) : Controller
+    public class AgentsController(IAgentService _agentService, IMissionService _missionService /*IServiceProvider serviceProvider*/) : Controller
     {
+        //private IAgentService _agentService = serviceProvider.GetRequiredService<IAgentService>();
+        //private IMissionService _missionService = serviceProvider.GetRequiredService<IMissionService>();
         [HttpGet]
         public async Task<ActionResult> GetAgentsList()
         {
             try
             {
-                List<AgentModel> agents = await agentService.GetAgentsAsync();
+                List<AgentModel> agents = await _agentService.GetAgentsAsync();
                 return Ok(agents);
             }
             catch (Exception ex)
@@ -31,7 +33,7 @@ namespace AgentsRest.Controllers
         {
             try
             {
-                int newAgentId = await agentService.CreateAgentReturnIdAsync(agentDto);
+                int newAgentId = await _agentService.CreateAgentReturnIdAsync(agentDto);
                 IdDto agentIdToSend = new() { Id = newAgentId };
                 return Ok(agentIdToSend);
             }
@@ -46,7 +48,23 @@ namespace AgentsRest.Controllers
         {
             try
             {
-                await agentService.AgentFirstLocation(locationDto, id);
+                await _agentService.AgentFirstLocation(locationDto, id);
+                await _missionService.ActualMissionProposalWhenAgentMove(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpPut("{id}/move")]
+        public async Task<ActionResult> UpdateAgentLocation([FromBody] DirectionDto direction, int id)
+        {
+            try
+            {
+                await _agentService.MoveAgentById(id, direction);
+                await _missionService.ActualMissionProposalWhenAgentMove(id);
                 return Ok();
             }
             catch (Exception ex)

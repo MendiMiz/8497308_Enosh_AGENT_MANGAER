@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgentsRest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240822061529_InitialCreate")]
+    [Migration("20240822130410_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -67,16 +67,16 @@ namespace AgentsRest.Migrations
                     b.Property<int>("AgentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MissionStatus")
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<int>("TargetId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("TimeLeft")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("TimeLeft")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("TimeToDo")
+                    b.Property<DateTime>("TimeOfKill")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -95,6 +95,10 @@ namespace AgentsRest.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -122,7 +126,7 @@ namespace AgentsRest.Migrations
             modelBuilder.Entity("AgentsRest.Models.MissionModel", b =>
                 {
                     b.HasOne("AgentsRest.Models.AgentModel", "Agent")
-                        .WithMany()
+                        .WithMany("Missions")
                         .HasForeignKey("AgentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -136,6 +140,11 @@ namespace AgentsRest.Migrations
                     b.Navigation("Agent");
 
                     b.Navigation("Target");
+                });
+
+            modelBuilder.Entity("AgentsRest.Models.AgentModel", b =>
+                {
+                    b.Navigation("Missions");
                 });
 #pragma warning restore 612, 618
         }

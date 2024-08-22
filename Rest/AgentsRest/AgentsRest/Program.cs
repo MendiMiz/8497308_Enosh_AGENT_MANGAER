@@ -1,4 +1,8 @@
 
+using AgentsRest.Data;
+using AgentsRest.Service;
+using Microsoft.EntityFrameworkCore;
+
 namespace AgentsRest
 {
     public class Program
@@ -13,6 +17,15 @@ namespace AgentsRest
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            
+            builder.Services.AddScoped<IAgentService, AgentService>();
+            builder.Services.AddDbContext<ApplicationDbContext>(
+              options => options.UseSqlServer(
+                  builder.Configuration.GetConnectionString(
+                      "DefaultConnection"
+                      )
+                  )
+              );
 
             var app = builder.Build();
 

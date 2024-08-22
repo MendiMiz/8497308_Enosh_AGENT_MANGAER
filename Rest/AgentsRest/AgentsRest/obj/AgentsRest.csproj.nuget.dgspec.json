@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mendel\\source\\repos\\AgentsExam\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj": {}
+    "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mendel\\source\\repos\\AgentsExam\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj": {
+    "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mendel\\source\\repos\\AgentsExam\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj",
+        "projectUniqueName": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj",
         "projectName": "AgentsRest",
-        "projectPath": "C:\\Users\\Mendel\\source\\repos\\AgentsExam\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj",
+        "projectPath": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Rest\\AgentsRest\\AgentsRest\\AgentsRest.csproj",
         "packagesPath": "C:\\Users\\Mendel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mendel\\source\\repos\\AgentsExam\\Rest\\AgentsRest\\AgentsRest\\obj\\",
+        "outputPath": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Rest\\AgentsRest\\AgentsRest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

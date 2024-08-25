@@ -8,6 +8,7 @@ namespace AgentsRest.Service
         Task<List<TargetModel>> GetTargetsAsync();
         Task<int> CreateTargetReturnIdAsync(TargetDto targetDto);
         Task TargetFirstLocation(LocationDto locationDto, int id);
+        Task MoveTargetById(int targetId, DirectionDto direction);
 
     }
 }

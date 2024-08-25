@@ -8,14 +8,14 @@ namespace AgentsRest.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class TargetsController(ITargetService targetService ) : ControllerBase
+    public class TargetsController(ITargetService _targetService, IMissionService _missionService ) : ControllerBase
     {
         [HttpGet]
         public async Task<ActionResult> GetTargetsList()
         {
             try
             {
-                List<TargetModel> targets = await targetService.GetTargetsAsync();
+                List<TargetModel> targets = await _targetService.GetTargetsAsync();
                 return Ok(targets);
             }
             catch (Exception ex)
@@ -29,7 +29,7 @@ namespace AgentsRest.Controllers
         {
             try
             {
-                int newTargetId = await targetService.CreateTargetReturnIdAsync(targetDto);
+                int newTargetId = await _targetService.CreateTargetReturnIdAsync(targetDto);
                 IdDto targetIdToSend = new() { Id = newTargetId };
                 return Ok(targetIdToSend);
             }
@@ -40,11 +40,11 @@ namespace AgentsRest.Controllers
         }
 
         [HttpPut("{id}/pin")]
-        public async Task<ActionResult> AddAgentFirstLocation([FromBody] LocationDto locationDto, int id)
+        public async Task<ActionResult> AddTargetFirstLocation([FromBody] LocationDto locationDto, int id)
         {
             try
             {
-                await targetService.TargetFirstLocation(locationDto, id);
+                await _targetService.TargetFirstLocation(locationDto, id);
                 return Ok();
             }
             catch (Exception ex)
@@ -53,6 +53,20 @@ namespace AgentsRest.Controllers
             }
         }
 
+        [HttpPut("{id}/move")]
+        public async Task<ActionResult> UpdateAgentLocation([FromBody] DirectionDto direction, int id)
+        {
+            try
+            {
+                await _targetService.MoveTargetById(id, direction);
+                await _missionService.ActualMissionProposalWhenTargetMove(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
 
     }
 }

@@ -1,6 +1,7 @@
 ﻿using AgentsRest.Data;
 using AgentsRest.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace AgentsRest.Service
 {
@@ -18,14 +19,14 @@ namespace AgentsRest.Service
             List<int> targetsInMissionForAgent =
                  await context.Missions
                  .Where(m => m.AgentId == agentId)
-                 .Select(m => m.AgentId).ToListAsync();
+                 .Select(m => m.TargetId).ToListAsync();
             List<TargetModel> targets = await context.Targets.ToListAsync();
 
             foreach (TargetModel target in targets)
             {
-                //if target not exists in a nission already
-                if (!targetsInMissionIds.Any(m => m == target.Id))
-                    if (!targetsInMissionForAgent.Any(m => m == target.Id))
+                //if target not exists in a mission already
+                if (!targetsInMissionIds.Any(tId => tId == target.Id))
+                    if (!targetsInMissionForAgent.Any(tId => tId == target.Id))
                     {
                         double AgentToTargetDistance = Distance(agent, target);
                         if (AgentToTargetDistance <= 200)
@@ -37,19 +38,37 @@ namespace AgentsRest.Service
             return await context.Missions.Where(m => m.Status == MissionStatus.Proposal).ToListAsync();
         }
 
-        public async Task<List<MissionModel>> ActualMissionProposalWhenTargetMove(TargetModel target)
+        public async Task<List<MissionModel>> ActualMissionProposalWhenTargetMove(TargetModel targetId)
         {
+            TargetModel? target = await context.Targets.FindAsync(targetId);
+            if (target == null) { throw new Exception($"failed to find a user with {targetId} id"); }
+
             if (target.Status != StatusTarget.InProgress)
             {
                 List<AgentModel> inactiveAgents = await context.Agents
                     .Where(agent => agent.Status == StatusAgent.Inactive).ToListAsync();
 
-                foreach (AgentModel agent in inactiveAgents)
+                List<int> targetsInMissionIds = await context.Missions
+               .Where(m => m.Status != MissionStatus.Proposal)
+               .Select(m => m.TargetId).ToListAsync();
+
+                List<int> targetsInMissionForTarget =
+                await context.Missions
+                 .Where(m => m.TargetId == target.Id)
+                 .Select(m => m.AgentId).ToListAsync();
+
+                if (!targetsInMissionIds.Any(tId => tId == target.Id))
                 {
-                    double AgentToTargetDistance = Distance(agent, target);
-                    if (AgentToTargetDistance <= 200)
+                    foreach (AgentModel agent in inactiveAgents)
                     {
-                        await CreateMission(agent.Id, target.Id, AgentToTargetDistance);
+                        if (!targetsInMissionForTarget.Any(tId => tId == target.Id))
+                        {
+                            double AgentToTargetDistance = Distance(agent, target);
+                            if (AgentToTargetDistance <= 200)
+                            {
+                                await CreateMission(agent.Id, target.Id, AgentToTargetDistance);
+                            }
+                        }
                     }
                 }
             }

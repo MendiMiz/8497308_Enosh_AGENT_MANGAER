@@ -47,7 +47,7 @@ namespace AgentsRest.Service
             target.Y = locationDto.Y;
             await context.SaveChangesAsync();
         }
-        public async Task MoveAgentById(int targetId, DirectionDto direction)
+        public async Task MoveTargetById(int targetId, DirectionDto direction)
         {
             TargetModel? target = await context.Targets.FindAsync(targetId);
             if (target == null) { throw new Exception("Not Found"); }

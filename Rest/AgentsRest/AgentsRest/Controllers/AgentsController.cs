@@ -12,8 +12,6 @@ namespace AgentsRest.Controllers
     [ApiController]
     public class AgentsController(IAgentService _agentService, IMissionService _missionService /*IServiceProvider serviceProvider*/) : Controller
     {
-        //private IAgentService _agentService = serviceProvider.GetRequiredService<IAgentService>();
-        //private IMissionService _missionService = serviceProvider.GetRequiredService<IMissionService>();
         [HttpGet]
         public async Task<ActionResult> GetAgentsList()
         {

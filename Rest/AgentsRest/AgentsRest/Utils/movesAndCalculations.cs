@@ -1,8 +1,8 @@
 ﻿namespace AgentsRest.Utils
 {
-    public class movesAndCalculations
+    public static class movesAndCalculations
     {
-        private readonly Dictionary<string, (int y, int x)> directionMove = new()
+        private static readonly Dictionary<string, (int y, int x)> directionMove = new()
         {
             {"n", (1, 0) },
             {"ne", (1, 1) },

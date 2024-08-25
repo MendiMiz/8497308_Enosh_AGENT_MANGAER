@@ -72,10 +72,7 @@ namespace AgentsRest.Service
             return distance;
         }
 
-        public async Task MoveAgentToTarget(AgentModel agent, TargetModel target)
-        {
-            
-        }
+    
 
         //public async Task<List<MissionModel>> ActualMissions()
         //{

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AgentsRest",
+    "\\AgentsRest\\AgentsRest",
+    "\\AgentsRest\\AgentsRest\\Controllers",
+    "\\AgentsRest\\AgentsRest\\Dto",
+    "\\AgentsRest\\AgentsRest\\Service"
+  ],
+  "SelectedNode": "\\AgentsRest\\AgentsRest\\Service\\IMissionService.cs",
+  "PreviewInSolutionExplorer": false
+}

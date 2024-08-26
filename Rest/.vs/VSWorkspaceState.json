@@ -7,6 +7,6 @@
     "\\AgentsRest\\AgentsRest\\Dto",
     "\\AgentsRest\\AgentsRest\\Service"
   ],
-  "SelectedNode": "\\AgentsRest\\AgentsRest\\Service\\IMissionService.cs",
+  "SelectedNode": "\\AgentsRest\\AgentsRest\\Service\\TargetService.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -4,23 +4,12 @@ using AgentsRest.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Runtime.CompilerServices;
+using static AgentsRest.Utils.movesAndCalculations;
 
 namespace AgentsRest.Service
 {
     public class MissionService(ApplicationDbContext context) : IMissionService
     {
-
-        private readonly Dictionary<string, (int y, int x)> directionMove = new()
-        {
-            {"n", (1, 0) },
-            {"ne", (1, 1) },
-            {"e" , (0, 1) },
-            {"se" , (-1, 1) },
-            {"s" , (-1, 0) },
-            {"sw" , (-1, -1) },
-            {"w" , (0, -1) },
-            {"nw" , (1, -1) }
-        };
         public async Task<List<MissionModel>> ActualMissionProposalWhenAgentMove(int agentId)
         {
             AgentModel? agent = await context.Agents.FindAsync(agentId);
@@ -48,7 +37,19 @@ namespace AgentsRest.Service
                         }
                     }
             }
-            return await context.Missions.Where(m => m.Status == MissionStatus.Proposal).ToListAsync();
+            
+            List<MissionModel> missions = await context.Missions
+                .Include(m => m.Agent)
+                .Include(m => m.Target)
+                .Where(m => m.Status == MissionStatus.Proposal)
+                .ToListAsync();
+            foreach(MissionModel mission in missions)
+            {
+                double agentToTargetDistance = Distance(mission.Agent, mission.Target);
+                if (agentToTargetDistance > 200) context.Missions.Remove(mission);
+            }
+            await context.SaveChangesAsync();
+            return await context.Missions.Where(m => m.Status == MissionStatus.Proposal).ToListAsync(); 
         }
         public async Task<List<MissionModel>> ActualMissionProposalWhenTargetMove(int targetId)
         {
@@ -114,7 +115,6 @@ namespace AgentsRest.Service
                 await MoveAgentTowardsTargetOrKill(mission);
             }
         }
-
         private string BestMoveTowardstarget(AgentModel agent, TargetModel target)
         {
             int differenceX = agent.X - target.X;
@@ -196,7 +196,22 @@ namespace AgentsRest.Service
             await context.SaveChangesAsync();
 
         }
+        public async Task<List<MissionModel>> GetProposalMissions()
+        {
+            return await context.Missions
+                .Where(m => m.Status == MissionStatus.Proposal)
+                .Include(m => m.Agent)
+                .Include(m => m.Target)
+                .ToListAsync();
+        }
+        public async Task<List<MissionModel>> GetMissionsAsync()
+        {
+            return await context.Missions
+                .Include(m => m.Agent)
+                .Include(m => m.Target)
+                .ToListAsync();
+        }
 
-        
+
     }
 }

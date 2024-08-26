@@ -8,17 +8,6 @@ namespace AgentsRest.Service
 {
     public class TargetService(ApplicationDbContext context) : ITargetService
     {
-        private readonly Dictionary<string, (int y, int x)> directionMove = new()
-        {
-            {"n", (1, 0) },
-            {"ne", (1, 1) },
-            {"e" , (0, 1) },
-            {"se" , (-1, 1) },
-            {"s" , (-1, 0) },
-            {"sw" , (-1, -1) },
-            {"w" , (0, -1) },
-            {"nw" , (1, -1) }
-        };
         public async Task<List<TargetModel>> GetTargetsAsync()
         {
             List<TargetModel> targets = await context.Targets.ToListAsync();
@@ -47,6 +36,7 @@ namespace AgentsRest.Service
             target.Y = locationDto.Y;
             await context.SaveChangesAsync();
         }
+
         public async Task MoveTargetById(int targetId, DirectionDto direction)
         {
             TargetModel? target = await context.Targets.FindAsync(targetId);

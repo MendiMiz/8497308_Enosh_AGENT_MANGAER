@@ -1,0 +1,344 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\dashboard\\agentsstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\dashboard\\agentsstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\service\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\dashboard\\targetsstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\dashboard\\targetsstatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\service\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\idashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\dashboard\\missiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\dashboard\\missiondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\controllers\\missionsselectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\missionsselectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\service\\missionsselectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\missionsselectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\dto\\generalstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\generalstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\dto\\missiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\missiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\service\\imissionsselectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\imissionsselectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\dto\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webapplication1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\missionsselect\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\missionsselect\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|c:\\users\\mendel\\source\\repos\\8497308_enosh_agent_mangaer\\mvc\\agentsmvc\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A70F4C2A-C4F9-4CF8-9BD8-BFD2CB002022}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 176,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TargetsStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\TargetsStatus.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\DashBoard\\TargetsStatus.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\TargetsStatus.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\DashBoard\\TargetsStatus.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAC8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T11:41:22.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MissionDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\MissionDetails.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\DashBoard\\MissionDetails.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\MissionDetails.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\DashBoard\\MissionDetails.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T11:27:31.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgentsStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\AgentsStatus.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\DashBoard\\AgentsStatus.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\AgentsStatus.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\DashBoard\\AgentsStatus.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T10:40:46.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\DashBoard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\DashBoard\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\DashBoard\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T08:50:50.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GeneralStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\GeneralStatusDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Dto\\GeneralStatusDto.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\GeneralStatusDto.cs",
+              "RelativeToolTip": "WebApplication1\\Dto\\GeneralStatusDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:09:45.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DashBoardService.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\DashBoardService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\DashBoardService.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\DashBoardService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\DashBoardService.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAwwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:08:54.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDashBoardService.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\IDashBoardService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\IDashBoardService.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\IDashBoardService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\IDashBoardService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:08:39.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MissionsSelectService.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\MissionsSelectService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\MissionsSelectService.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\MissionsSelectService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\MissionsSelectService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T07:56:02.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IMissionsSelectService.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\IMissionsSelectService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\IMissionsSelectService.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Service\\IMissionsSelectService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\IMissionsSelectService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T07:51:16.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WebApplication1.csproj",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\WebApplication1.csproj",
+              "RelativeDocumentMoniker": "WebApplication1\\WebApplication1.csproj",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\WebApplication1.csproj",
+              "RelativeToolTip": "WebApplication1\\WebApplication1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-26T07:49:37.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Controllers\\DashBoardController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\DashBoardController.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Controllers\\DashBoardController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\DashBoardController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwA8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T07:34:49.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T15:01:13.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T07:00:32.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA1wAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:56:19.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\MissionsSelect\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\MissionsSelect\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Views\\MissionsSelect\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\MissionsSelect\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAD4AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T13:49:01.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MissionsSelectController.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Controllers\\MissionsSelectController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\MissionsSelectController.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Controllers\\MissionsSelectController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\MissionsSelectController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:47:32.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TargetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\TargetDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Dto\\TargetDto.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\TargetDto.cs",
+              "RelativeToolTip": "WebApplication1\\Dto\\TargetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:42:24.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MissionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\MissionDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Dto\\MissionDto.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\MissionDto.cs",
+              "RelativeToolTip": "WebApplication1\\Dto\\MissionDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:41:16.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AgentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\AgentDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Dto\\AgentDto.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Dto\\AgentDto.cs",
+              "RelativeToolTip": "WebApplication1\\Dto\\AgentDto.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwBEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:28:16.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mendel\\source\\repos\\8497308_Enosh_AGENT_MANGAER\\Mvc\\AgentsMvc\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:11:39.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-﻿using AgentsRest.Service;
+﻿using AgentsRest.Models;
+using AgentsRest.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,19 @@ namespace AgentsRest.Controllers
     [ApiController]
     public class MissionsController(IMissionService _missionService) : ControllerBase
     {
+        [HttpGet]
+        public async Task<ActionResult> GetAgentsList()
+        {
+            try
+            {
+                List<MissionModel> missions = await _missionService.GetMissionsAsync();
+                return Ok(missions);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         [HttpPost("update")]
         public async Task<ActionResult> UpdateMissions()
         {
@@ -36,5 +50,18 @@ namespace AgentsRest.Controllers
             }
         }
 
+        [HttpGet("proposalMissions")]
+        public async Task<ActionResult> GetProposalMissions()
+        {
+            try
+            {
+                List<MissionModel> proposalMissions = await _missionService.GetProposalMissions();
+                return Ok(proposalMissions);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

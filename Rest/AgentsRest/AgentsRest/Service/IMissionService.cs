@@ -8,6 +8,8 @@ namespace AgentsRest.Service
         Task<List<MissionModel>> ActualMissionProposalWhenTargetMove(int targetId);
         Task UpdateMissions();
         Task ActivateMissionById(int missionId);
+        Task<List<MissionModel>> GetProposalMissions();
+        Task<List<MissionModel>> GetMissionsAsync();
 
     }
 }

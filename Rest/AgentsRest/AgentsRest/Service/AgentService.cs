@@ -3,22 +3,12 @@ using AgentsRest.Dto;
 using AgentsRest.Models;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
+using static AgentsRest.Utils.movesAndCalculations;
 
 namespace AgentsRest.Service
 {
     public class AgentService(ApplicationDbContext context) : IAgentService
     {
-        private readonly Dictionary<string, (int y, int x)> directionMove = new()
-        {
-            {"n", (1, 0) },
-            {"ne", (1, 1) },
-            {"e" , (0, 1) },
-            {"se" , (-1, 1) },
-            {"s" , (-1, 0) },
-            {"sw" , (-1, -1) },
-            {"w" , (0, -1) },
-            {"nw" , (1, -1) }
-        };
         public async Task MoveAgentToLocationAsync(AgentModel agent, int x, int y)
         {
             agent.X = x;
@@ -71,25 +61,5 @@ namespace AgentsRest.Service
             double distance = Math.Sqrt(Math.Pow(target.X - agent.X, 2) + Math.Pow(target.Y - agent.Y, 2));
             return distance;
         }
-
-    
-
-        //public async Task<List<MissionModel>> ActualMissions()
-        //{
-        //    //Get inactive agents
-        //    List<AgentModel> agents = await context.Agents.Where(a => a.Status == StatusAgent.Inactive).ToListAsync();
-        //    List<TargetModel> targets = await context.Targets.Where(t => true == !context.Missions.Any(m => m.TargetId == t.Id)
-
-        //}
-
-        //public async Task<bool> MoveIfInRange(DirectionDto direction, int CurrentX, int CurrentY)
-        //{
-        //    //Get the moves needed to go to the direction given
-        //    (int y, int x) move = directionMove[direction.Direction];
-        //    int newX = CurrentX + move.x;
-        //    int newY = CurrentY + move.y;
-        //    if (newX < 0 || newX > 1000 || newY < 0 || newY > 1000) { return false; }
-
-        //}
     }
 }

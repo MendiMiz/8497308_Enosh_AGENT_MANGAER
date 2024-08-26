@@ -1,0 +1,81 @@
+﻿@model IEnumerable<WebApplication1.Dto.AgentDto>
+
+@{
+    ViewData["Title"] = "AgentsStatus";
+}
+
+<h1>AgentsStatus</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nickname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.X)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Y)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kills)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeLeftToMission)
+            </th>
+            <th>
+                @Html.DisplayName("Mission Details")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nickname)
+            </td>
+            <td>
+					<img src="@item.Image" alt="Agent image" border-radius: 50% />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.X)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Y)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kills)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeLeftToMission)
+            </td>
+            <td>
+                @if (item.MissionId != 0)
+                {
+                    @Html.ActionLink("Mission Details", "MissionDetails", new { missionId = item.MissionId })   
+                } 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -136,3 +136,4 @@ C:\Users\Mendel\source\repos\8497308_Enosh_AGENT_MANGAER\Rest\AgentsRest\AgentsR
 C:\Users\Mendel\source\repos\8497308_Enosh_AGENT_MANGAER\Rest\AgentsRest\AgentsRest\obj\Debug\net8.0\AgentsRest.pdb
 C:\Users\Mendel\source\repos\8497308_Enosh_AGENT_MANGAER\Rest\AgentsRest\AgentsRest\obj\Debug\net8.0\AgentsRest.genruntimeconfig.cache
 C:\Users\Mendel\source\repos\8497308_Enosh_AGENT_MANGAER\Rest\AgentsRest\AgentsRest\obj\Debug\net8.0\ref\AgentsRest.dll
+C:\Users\Mendel\source\repos\8497308_Enosh_AGENT_MANGAER\Rest\AgentsRest\AgentsRest\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -203,7 +203,7 @@ namespace AgentsRest.Service
                .Where(m => m.Id != missionId)
                .ToListAsync();
 
-            context.RemoveRange(missionsProposalToDelete);
+            context.Missions.RemoveRange(missionsProposalToDelete);
             await context.SaveChangesAsync();
 
         }

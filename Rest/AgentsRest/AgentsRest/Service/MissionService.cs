@@ -131,6 +131,7 @@ namespace AgentsRest.Service
                 await MoveAgentTowardsTargetOrKill(mission);
             }
         }
+        //give the best moovemnt to the agent to arrive to the target
         private string BestMoveTowardstarget(AgentModel agent, TargetModel target)
         {
             int differenceX = agent.X - target.X;

@@ -15,13 +15,14 @@ namespace AgentsRest.Service
             agent.Y = y;
             await context.SaveChangesAsync();
         }
+        //give to a new created agent a position
         public async Task AgentFirstLocation(LocationDto locationDto, int id)
         {
             AgentModel? agent = await context.Agents.FindAsync(id);
             if (agent == null) { throw new Exception("Not Found"); }
             await MoveAgentToLocationAsync(agent, locationDto.X, locationDto.Y);
         }
-
+        
         public async Task<int> CreateAgentReturnIdAsync(AgentDto agentDto)
         {
             if (agentDto == null) { throw new ArgumentNullException(nameof(agentDto)); }
@@ -47,12 +48,15 @@ namespace AgentsRest.Service
             AgentModel? agent = await context.Agents.FindAsync(agentId);
             if (agent == null) { throw new Exception("Not Found"); }
             if (agent.Status == StatusAgent.Active) { throw new Exception("In mission"); }
+            //add the needed + to the new x and y
             int x = agent.X;
             int y = agent.Y;
             (int y, int x) move = directionMove[direction.Direction];
             x += move.x;
             y += move.y;
+            //throw an error if movement is out of map range.
             if(x < 0 || x > 1000 || y < 0 || y > 1000) { throw new Exception("Out of range"); }
+            //using the new x and y to update the agent new position
             await MoveAgentToLocationAsync(agent, x, y);
         }
 

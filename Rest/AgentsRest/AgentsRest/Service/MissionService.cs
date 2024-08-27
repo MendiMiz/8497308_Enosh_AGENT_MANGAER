@@ -10,6 +10,7 @@ namespace AgentsRest.Service
 {
     public class MissionService(ApplicationDbContext context) : IMissionService
     {
+        //update the proposal missions on agent move.
         public async Task<List<MissionModel>> ActualMissionProposalWhenAgentMove(int agentId)
         {
             AgentModel? agent = await context.Agents.FindAsync(agentId);
@@ -41,24 +42,10 @@ namespace AgentsRest.Service
             //check if agents with proposal go out of the range  and remove from proposal
             await CheckIfAgentGoOutOfRangeAndRemove();
 
-            
+
             return await context.Missions.Where(m => m.Status == MissionStatus.Proposal).ToListAsync();
         }
-
-        private async Task CheckIfAgentGoOutOfRangeAndRemove()
-        {
-            List<MissionModel> missions = await context.Missions
-                .Include(m => m.Agent)
-                .Include(m => m.Target)
-                .Where(m => m.Status == MissionStatus.Proposal)
-                .ToListAsync();
-            foreach (MissionModel mission in missions)
-            {
-                double agentToTargetDistance = Distance(mission.Agent, mission.Target);
-                if (agentToTargetDistance > 200) context.Missions.Remove(mission);
-            }
-            await context.SaveChangesAsync();
-        }
+        //update the proposal missions on target move.
         public async Task<List<MissionModel>> ActualMissionProposalWhenTargetMove(int targetId)
         {
             TargetModel? target = await context.Targets.FindAsync(targetId);
@@ -96,9 +83,25 @@ namespace AgentsRest.Service
             }
             await context.SaveChangesAsync();
             await CheckIfAgentGoOutOfRangeAndRemove();
-            
+
             return await context.Missions.Where(m => m.Status == MissionStatus.Proposal).ToListAsync();
         }
+        
+        private async Task CheckIfAgentGoOutOfRangeAndRemove()
+        {
+            List<MissionModel> missions = await context.Missions
+                .Include(m => m.Agent)
+                .Include(m => m.Target)
+                .Where(m => m.Status == MissionStatus.Proposal)
+                .ToListAsync();
+            foreach (MissionModel mission in missions)
+            {
+                double agentToTargetDistance = Distance(mission.Agent, mission.Target);
+                if (agentToTargetDistance > 200) context.Missions.Remove(mission);
+            }
+            await context.SaveChangesAsync();
+        }
+
         public async Task CreateMission(int agentId, int targetId, double distance)
         {
             MissionModel newMission = new()
@@ -116,6 +119,7 @@ namespace AgentsRest.Service
             double distance = Math.Sqrt(Math.Pow(target.X - agent.X, 2) + Math.Pow(target.Y - agent.Y, 2));
             return distance;
         }
+        //make the movement for each agent in mission toward his target and kill if arrive to him.
         public async Task UpdateMissions()
         {
             List<MissionModel> missionsInProccess = await context.Missions
